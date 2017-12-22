@@ -21,3 +21,11 @@ $dbm->table('users')
         $dbm->column('about')->text()->add()
     ])
     ->create();
+
+# Tabloyu sil
+$dbm->table('users')
+    ->delete();
+
+# Veritabanını sil
+$dbm->database('test_db')
+    ->delete();
